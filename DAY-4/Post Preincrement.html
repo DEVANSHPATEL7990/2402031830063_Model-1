@@ -1,0 +1,35 @@
+
+        <html>
+<head>
+    <title>Increment and Decrement</title>
+</head>
+
+<body>
+
+    <h2>Increment and Decrement</h2>
+
+    <p id="pre"></p>
+    <p id="post"></p>
+    <p id="predec"></p>
+    <p id="postdec"></p>
+
+    <script>
+        var a = 5;
+        var b = 6;
+        var c = 7;
+        var d = 8;
+
+        var preIncrement = ++a;
+        var postIncrement = b++;
+
+        var preDecrement = --c;
+        var postDecrement = d--;
+
+        document.getElementById("pre").innerHTML = "Preincrement (a): " + preIncrement;
+        document.getElementById("post").innerHTML = "Postincrement (b): " + postIncrement;
+        document.getElementById("predec").innerHTML = "Predecrement (c): " + preDecrement;
+        document.getElementById("postdec").innerHTML = "Postdecrement (d): " + postDecrement;
+    </script>
+
+</body>
+</html>
