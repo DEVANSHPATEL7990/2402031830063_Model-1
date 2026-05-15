@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.box {
+  width: 10px;
+  height: 10px;
+  background: blue;
+  transition: transform 1s;
+}
+@keyframes rotateScaleTranslate {
+  from {
+    transform: rotate(0deg) scale(1) translateX(0);
+  }
+  to {
+    transform: rotate(45deg) scale(1.2) translateX(50px);
+  }
+}
+.box:hover {
+  transform: rotate(45deg) scale(1.2) translateX(50px);
+}

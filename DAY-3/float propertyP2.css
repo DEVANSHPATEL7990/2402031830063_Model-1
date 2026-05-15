@@ -1,0 +1,10 @@
+#division1{
+    background-color: rgb(238, 20, 20);
+    float: left;
+    width: 40%;
+}
+#division2{
+    background-color: rgb(110, 105, 117);
+    float: right;
+    width: 40%;
+}

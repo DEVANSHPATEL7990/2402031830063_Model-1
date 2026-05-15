@@ -1,0 +1,15 @@
+#h1 {
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+h2{
+    position: absolute;
+    left: 15px;
+    top: 100px;
+}
+h3{
+    position: fixed;
+    left: 50px;
+    top: 20px;
+}
