@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="myText" placeholder="Enter Text">
+    <button onclick="myFunction()">Focus</button>
+    <button onclick="myFunction2()">Change</button>
+
+    Select Product : 
+    <select name="product" id="product">
+        <option value="80,000">Laptop</option>
+        <option value="50,000">Mobile</option>
+        <option value="30,000">Tablet</option>
+    </select>
+
+    <br><br>
+
+    Net price : <input type="text" id="Price"><br><br>
+    Quantity : <input type="text" id="Quantity"><br><br>
+    Total Amount : <input type="text" id="Total" readonly><br><br>
+
+    <script>
+        var product = document.getElementById("product");
+        var quantity = document.getElementById("Quantity");
+        var amount = document.getElementById("Total");
+        var price = document.getElementById("Price");
+
+        product.addEventListener("change", function() {
+            price.value = product.value;
+            calculateTotal();
+        });
+ 
+    </script>
+
+</body>
+</html>
