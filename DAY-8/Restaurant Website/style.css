@@ -1,0 +1,42 @@
+/* MENU SECTION */
+
+.menu{
+  padding:80px 8%;
+  background:#fff;
+  text-align:center;
+}
+
+.menu h2{
+  font-size:45px;
+  color:#ff6600;
+  margin-bottom:40px;
+}
+
+.menu-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.menu-box{
+  background:#fff8f0;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+.menu-box:hover{
+  transform:translateY(-5px);
+}
+
+.menu-box h3{
+  color:#ff6600;
+  margin-bottom:15px;
+  font-size:28px;
+}
+
+.menu-box p{
+  margin:10px 0;
+  font-size:18px;
+}

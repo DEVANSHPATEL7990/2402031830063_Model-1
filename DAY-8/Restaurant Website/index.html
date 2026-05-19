@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Shiv Food</title>
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#fff8f0;
+    }
+    nav{
+      width:100%;
+      background:#ff6600;
+      padding:15px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      z-index:1000;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .logo img{
+      width:55px;
+      height:55px;
+      border-radius:50%;
+      background:white;
+      padding:5px;
+    }
+
+    .logo h1{
+      color:white;
+      font-size:30px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+    }
+
+    nav ul li{
+      margin-left:20px;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      font-size:18px;
+    }
+
+    /* Hero Section */
+
+    .hero{
+      width:100%;
+      height:100vh;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content{
+      max-width:700px;
+    }
+
+    .hero-content h2{
+      font-size:65px;
+      margin-bottom:15px;
+    }
+
+    .hero-content p{
+      font-size:22px;
+      margin-bottom:12px;
+    }
+
+    .details{
+      margin-top:25px;
+      line-height:35px;
+      font-size:19px;
+    }
+
+    .hero-content button{
+      margin-top:25px;
+      padding:14px 30px;
+      border:none;
+      background:#ff6600;
+      color:white;
+      font-size:18px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    .hero-content button:hover{
+      background:#e65c00;
+    }
+
+    /* Mobile Responsive */
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+      }
+
+      nav ul{
+        margin-top:10px;
+      }
+
+      .logo h1{
+        font-size:24px;
+      }
+
+      .hero-content h2{
+        font-size:40px;
+      }
+
+      .hero-content p{
+        font-size:18px;
+      }
+
+      .details{
+        font-size:16px;
+        line-height:30px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+ <!-- Navbar -->
+
+  <nav>
+
+    <div class="logo">
+
+      <!-- Logo -->
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Logo">
+
+      <h1>Shiv Food</h1>
+
+    </div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- First Page -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h2>Welcome To Shiv Food</h2>
+
+      <p>
+        Fresh Food • Great Taste • Fast Delivery
+      </p>
+
+      <div class="details">
+
+        <p><b>Owner :</b> Devansh Patel</p>
+
+        <p><b>Contact :</b> 7990828756</p>
+
+        <p>
+          <b>Address :</b>
+          Ghatlodia, Near By Prabhat Chowk, Ahemdabad
+        </p>
+
+      </div>
+
+      <button onclick="showMessage()">
+        Order Now
+      </button>
+
+    </div>
+
+  </section>
+
+  <script>
+
+    function showMessage(){
+      alert("Welcome To Shiv Food!");
+    }
+
+  </script>
+
+</body>
+</html>
+<!-- MENU SECTION -->
+
+<section id="menu" class="menu">
+
+  <h2>Our Special Menu</h2>
+
+  <div class="menu-container">
+
+    <!-- Punjabi -->
+
+    <div class="menu-box">
+      <h3>Punjabi</h3>
+
+      <p>Paneer Butter Masala - ₹220</p>
+      <p>Kaju Curry - ₹240</p>
+      <p>Sev Tameta - ₹180</p>
+      <p>Veg Kolhapuri - ₹210</p>
+    </div>
+
+    <!-- Chinese -->
+
+    <div class="menu-box">
+      <h3>Chinese</h3>
+
+      <p>Hakka Noodles - ₹160</p>
+      <p>Manchurian - ₹170</p>
+      <p>Fried Rice - ₹150</p>
+      <p>Schezwan Noodles - ₹180</p>
+    </div>
+
+    <!-- Fast Food -->
+
+    <div class="menu-box">
+      <h3>Fast Food</h3>
+
+      <p>Cheese Burger - ₹120</p>
+      <p>Pizza - ₹250</p>
+      <p>French Fries - ₹90</p>
+      <p>Sandwich - ₹110</p>
+    </div>
+
+    <!-- South Indian -->
+
+    <div class="menu-box">
+      <h3>South Indian</h3>
+
+      <p>Masala Dosa - ₹130</p>
+      <p>Idli Sambhar - ₹90</p>
+      <p>Uttapam - ₹120</p>
+      <p>Medu Vada - ₹100</p>
+    </div>
+
+    <!-- Drinks -->
+
+    <div class="menu-box">
+      <h3>Drinks</h3>
+
+      <p>Cold Coffee - ₹90</p>
+      <p>Chocolate Shake - ₹120</p>
+      <p>Fresh Lime Soda - ₹70</p>
+      <p>Mango Juice - ₹80</p>
+    </div>
+
+    <!-- Dessert -->
+
+    <div class="menu-box">
+      <h3>Desserts</h3>
+
+      <p>Ice Cream - ₹60</p>
+      <p>Brownie - ₹110</p>
+      <p>Gulab Jamun - ₹50</p>
+      <p>Falooda - ₹90</p>
+    </div>
+
+  </div>
+
+</section>
+
+ 
